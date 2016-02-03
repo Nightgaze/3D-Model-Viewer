@@ -1,0 +1,78 @@
+﻿Build started 10/11/2015 10:01:50 AM.
+     1>Project "D:\Development\G_OpenGL\GAME ENGINE\UPIT\Engine\Engine\Engine.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Software\Microsoft Visual Studio 2015 Professional\VC\bin\CL.exe /c /I.\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt display.cpp main.cpp mesh.cpp obj_loader.cpp shader.cpp texture.cpp
+         texture.cpp
+         shader.cpp
+         obj_loader.cpp
+     1>d:\development\g_opengl\game engine\upit\engine\engine\obj_loader.cpp(378): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+         mesh.cpp
+         main.cpp
+         display.cpp
+         Generating Code...
+         D:\Software\Microsoft Visual Studio 2015 Professional\VC\bin\CL.exe /c /I.\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt stb_image.c
+         stb_image.c
+     1>d:\development\g_opengl\game engine\upit\engine\engine\stb_image.c(300): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+     1>d:\development\g_opengl\game engine\upit\engine\engine\stb_image.c(362): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+     1>d:\development\g_opengl\game engine\upit\engine\engine\stb_image.c(400): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+     1>d:\development\g_opengl\game engine\upit\engine\engine\stb_image.c(4293): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+       Link:
+         D:\Software\Microsoft Visual Studio 2015 Professional\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Development\G_OpenGL\GAME ENGINE\UPIT\Engine\Debug\Engine.exe" /INCREMENTAL /NOLOGO /LIBPATH:.\lib glew32.lib glew32s.lib SDL2.lib SDL2main.lib SDL2test.lib OpenGL32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Development\G_OpenGL\GAME ENGINE\UPIT\Engine\Debug\Engine.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Development\G_OpenGL\GAME ENGINE\UPIT\Engine\Debug\Engine.lib" /MACHINE:X86 Debug\display.obj
+         Debug\main.obj
+         Debug\mesh.obj
+         Debug\obj_loader.obj
+         Debug\shader.obj
+         Debug\stb_image.obj
+         Debug\texture.obj
+     1>display.obj : error LNK2019: unresolved external symbol _SDL_CreateWindow referenced in function "public: __thiscall Display::Display(int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0Display@@QAE@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>display.obj : error LNK2019: unresolved external symbol _SDL_DestroyWindow referenced in function "public: virtual __thiscall Display::~Display(void)" (??1Display@@UAE@XZ)
+     1>display.obj : error LNK2019: unresolved external symbol _SDL_GL_SetAttribute referenced in function "public: __thiscall Display::Display(int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0Display@@QAE@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>display.obj : error LNK2019: unresolved external symbol _SDL_GL_CreateContext referenced in function "public: __thiscall Display::Display(int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0Display@@QAE@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>display.obj : error LNK2019: unresolved external symbol _SDL_GL_SwapWindow referenced in function "public: void __thiscall Display::Update(class Transform &)" (?Update@Display@@QAEXAAVTransform@@@Z)
+     1>display.obj : error LNK2019: unresolved external symbol _SDL_GL_DeleteContext referenced in function "public: virtual __thiscall Display::~Display(void)" (??1Display@@UAE@XZ)
+     1>display.obj : error LNK2019: unresolved external symbol _SDL_PollEvent referenced in function "public: void __thiscall Display::Update(class Transform &)" (?Update@Display@@QAEXAAVTransform@@@Z)
+     1>display.obj : error LNK2019: unresolved external symbol _SDL_Init referenced in function "public: __thiscall Display::Display(int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0Display@@QAE@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>display.obj : error LNK2019: unresolved external symbol _SDL_Quit referenced in function "public: virtual __thiscall Display::~Display(void)" (??1Display@@UAE@XZ)
+     1>display.obj : error LNK2019: unresolved external symbol __imp__glewInit@0 referenced in function "public: __thiscall Display::Display(int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0Display@@QAE@HHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>mesh.obj : error LNK2001: unresolved external symbol __imp____glewBindBuffer
+     1>mesh.obj : error LNK2001: unresolved external symbol __imp____glewBufferData
+     1>mesh.obj : error LNK2001: unresolved external symbol __imp____glewGenBuffers
+     1>mesh.obj : error LNK2001: unresolved external symbol __imp____glewEnableVertexAttribArray
+     1>mesh.obj : error LNK2001: unresolved external symbol __imp____glewVertexAttribPointer
+     1>mesh.obj : error LNK2001: unresolved external symbol __imp____glewBindVertexArray
+     1>mesh.obj : error LNK2001: unresolved external symbol __imp____glewDeleteVertexArrays
+     1>mesh.obj : error LNK2001: unresolved external symbol __imp____glewGenVertexArrays
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewAttachShader
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewBindAttribLocation
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewCompileShader
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewCreateProgram
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewCreateShader
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewDeleteProgram
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewDeleteShader
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewDetachShader
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewGetProgramInfoLog
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewGetProgramiv
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewGetShaderInfoLog
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewGetShaderiv
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewGetUniformLocation
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewLinkProgram
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewShaderSource
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewUniformMatrix4fv
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewUseProgram
+     1>shader.obj : error LNK2001: unresolved external symbol __imp____glewValidateProgram
+     1>MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+     1>.\lib\glew32.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+     1>.\lib\glew32s.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+     1>.\lib\SDL2.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+     1>.\lib\SDL2main.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+     1>.\lib\SDL2test.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+     1>D:\Development\G_OpenGL\GAME ENGINE\UPIT\Engine\Debug\Engine.exe : fatal error LNK1120: 37 unresolved externals
+     1>Done Building Project "D:\Development\G_OpenGL\GAME ENGINE\UPIT\Engine\Engine\Engine.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:26.94
